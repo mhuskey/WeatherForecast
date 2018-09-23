@@ -1,0 +1,7 @@
+<%= form_tag index_path do %>
+  <%= text_field_tag :city, nil, placeholder: "City", class: "form-control", autofocus: true %><br />
+  
+  <%= select_tag :state, options_for_select(@states), prompt: "Please select" %><br />
+  
+  <%= submit_tag "Check Weather", class: "btn btn-primary" %>
+<% end %>

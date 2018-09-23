@@ -1,0 +1,5 @@
+<% @locations.each do |location| %>
+  <li>
+    <%= link_to "#{location.city.titleize.gsub('_', ' ')}, #{location.state}", root_path(city: location.city, state: location.state) %>
+  </li>
+<% end %>
